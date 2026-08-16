@@ -152,3 +152,33 @@ footer{padding:40px 0 56px;color:#7f90a0;font-size:.89rem}
   .footer-in{display:block}
   .footer-links{margin-top:14px}
 }
+
+/* ---- Document pages (privacy, and any prose page that follows) ----
+   These share the marketing page's tokens and nav/footer rather than
+   carrying their own, so a visitor arriving from the footer link stays
+   in the same design and the stylesheet is already cached. */
+.doc{padding:64px 0 40px}
+.doc-wrap{max-width:760px}
+.doc-title{font-size:clamp(2.6rem,5.5vw,4.2rem);line-height:1;letter-spacing:-.05em;margin:20px 0 20px}
+.doc-lede{font-size:1.15rem;color:var(--muted);margin:0 0 16px}
+.doc-lede strong{color:var(--text);font-weight:800}
+.doc-wrap h2{font-size:1.42rem;letter-spacing:-.02em;margin:46px 0 12px;color:#fff}
+.doc-wrap p{color:#c3cddb;margin:0 0 16px}
+.doc-wrap a:not(.brand):not(.btn){color:var(--gold2);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.doc-wrap a:not(.brand):not(.btn):hover{color:#fff}
+.doc-callout{margin:30px 0 8px;padding:24px 26px;border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,var(--panel),rgba(19,35,55,.35))}
+.doc-callout b{display:block;color:var(--gold2);font-size:.77rem;font-weight:900;letter-spacing:.20em;text-transform:uppercase;margin-bottom:12px}
+.doc-callout ul,.doc-list{margin:0;padding-left:0;list-style:none;display:grid;gap:10px}
+.doc-callout li,.doc-list li{position:relative;padding-left:22px;color:#dde5ec}
+.doc-callout li:before,.doc-list li:before{content:"›";position:absolute;left:0;top:-1px;color:var(--gold2);font-weight:900}
+.doc-list{margin:0 0 16px}
+.doc-list li{color:#c3cddb}
+.doc-list b{color:var(--text);font-weight:800}
+@media(max-width:600px){
+  .doc{padding:44px 0 28px}
+  .doc-callout{padding:20px}
+}
+/* Inert until there is a real App Store URL: same shape as .btn, but
+   visibly not clickable rather than a link that 404s. */
+.btn.disabled{background:transparent;border:1px dashed rgba(216,177,46,.45);color:var(--gold2);box-shadow:none;cursor:default;font-weight:800}
+.btn.disabled:hover{transform:none;box-shadow:none}
