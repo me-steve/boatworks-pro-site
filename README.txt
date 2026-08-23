@@ -16,7 +16,7 @@ Performance changes:
 - Browser/CDN can cache styles.css and each image independently across visits.
 
 Official support email:
-support@boatworks-pro.com
+crew@boatworks-pro.com
 
 Remaining launch items:
 - Replace YOUR_APP_STORE_URL.
