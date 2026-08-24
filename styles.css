@@ -46,6 +46,7 @@ h1{font-size:clamp(3.4rem,7vw,6.5rem);line-height:.92;letter-spacing:-.06em;marg
 .phone{width:53%;position:absolute;right:3%;top:0;border-radius:36px;overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.48),0 0 0 1px rgba(255,255,255,.09);transform:rotate(2deg);z-index:2}
 .phone.secondary{left:2%;right:auto;top:190px;width:46%;transform:rotate(-5deg);z-index:1}
 .phone img{width:100%;height:auto}
+.phone a{display:block}
 .glow{position:absolute;right:-5%;top:11%;width:72%;height:65%;background:radial-gradient(circle,rgba(216,177,46,.14),transparent 70%);filter:blur(18px)}
 section{padding:82px 0}
 .section-head{max-width:760px;margin-bottom:38px}
@@ -61,6 +62,7 @@ section{padding:82px 0}
 .bullets li{position:relative;padding-left:28px;color:#dde5ec}
 .bullets li:before{content:"";position:absolute;left:4px;top:.28em;width:7px;height:13px;border:solid var(--gold2);border-width:0 2px 2px 0;transform:rotate(45deg)}
 .screen-card{display:flex;justify-content:center}
+.screen-card>a{display:flex;justify-content:center;width:100%;border-radius:34px}
 .screen-card img{width:min(430px,90%);border-radius:34px;box-shadow:0 30px 75px rgba(0,0,0,.42),0 0 0 1px rgba(255,255,255,.08)}
 .trip{display:grid;grid-template-columns:.82fr 1.18fr;gap:58px;align-items:center}
 .trip img{width:min(460px,92%);margin:auto;border-radius:34px;box-shadow:0 30px 75px rgba(0,0,0,.42),0 0 0 1px rgba(255,255,255,.08)}
@@ -71,7 +73,9 @@ section{padding:82px 0}
 .mini b{display:block;color:var(--gold2);margin-bottom:6px}
 .mini span{color:var(--muted);font-size:.9rem}
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery>a{display:block;border-radius:28px}
 .gallery img{width:100%;border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.34),0 0 0 1px rgba(255,255,255,.07)}
+.phone a:hover img,.screen-card>a:hover img,.trip>div:first-child>a:hover img,.gallery>a:hover img{box-shadow:0 34px 84px rgba(0,0,0,.5),0 0 0 2px rgba(240,204,85,.32)}
 .cta{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:48px;border-radius:30px;border:1px solid rgba(216,177,46,.24);background:radial-gradient(circle at 90% 10%,rgba(216,177,46,.14),transparent 30%),linear-gradient(135deg,#102b42,#091d2f)}
 .cta-left{display:flex;gap:18px;align-items:center}
 .cta-left img{width:80px;height:80px;border-radius:20px}
