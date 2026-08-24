@@ -213,3 +213,36 @@ footer{padding:40px 0 56px;color:#7f90a0;font-size:.89rem}
    visibly not clickable rather than a link that 404s. */
 .btn.disabled{background:transparent;border:1px dashed rgba(216,177,46,.45);color:var(--gold2);box-shadow:none;cursor:default;font-weight:800}
 .btn.disabled:hover{transform:none;box-shadow:none}
+
+/* ---- SEO landing pages and expanded marketing content ---- */
+.navlinks .nav-cta{min-height:42px;padding:0 15px;color:#08131f}
+.page-hero{padding:76px 0 52px;text-align:center}
+.page-hero .eyebrow{justify-content:center}
+.page-hero h1{max-width:940px;margin:20px auto 22px;font-size:clamp(2.8rem,6vw,5.4rem)}
+.page-hero p{max-width:780px;margin:0 auto;color:var(--muted);font-size:1.16rem}
+.crumbs{padding-top:24px;color:#8fa0b0;font-size:.88rem}
+.crumbs a{color:var(--gold2)}
+.story-grid,.link-grid,.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.story-card,.link-card,.price-card,.compare-card{padding:28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,rgba(25,43,62,.88),rgba(10,26,41,.76))}
+.story-card h3,.link-card h3,.price-card h3{margin:7px 0 10px;font-size:1.35rem;letter-spacing:-.025em}
+.story-card p,.link-card p,.price-card p{margin:0;color:var(--muted)}
+.link-card{display:block;transition:.2s ease}
+.link-card:hover{transform:translateY(-4px);border-color:rgba(216,177,46,.35)}
+.link-card .more,.text-link{display:inline-flex;margin-top:18px;color:var(--gold2);font-weight:800}
+.band{background:rgba(4,14,24,.34);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.split h2{font-size:clamp(2.2rem,4.5vw,3.8rem);line-height:1;letter-spacing:-.045em;margin:12px 0 18px}
+.split p,.content p{color:var(--muted)}
+.proof{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.proof div{padding:18px;border-left:2px solid var(--gold);background:rgba(255,255,255,.025)}
+.proof b{display:block;color:#fff}.proof span{color:var(--muted);font-size:.9rem}
+.price-card.featured{border-color:rgba(216,177,46,.5);box-shadow:0 22px 60px rgba(0,0,0,.25)}
+.price{font-size:2.4rem;font-weight:900;letter-spacing:-.04em;margin:12px 0 3px}
+.price small{font-size:.9rem;color:var(--muted);font-weight:600;letter-spacing:0}
+.tag{display:inline-flex;padding:5px 9px;border-radius:999px;background:rgba(216,177,46,.14);color:var(--gold2);font-size:.75rem;font-weight:850;text-transform:uppercase;letter-spacing:.08em}
+.content{max-width:800px}.content h2{font-size:clamp(1.8rem,3.5vw,2.7rem);line-height:1.08;letter-spacing:-.035em;margin:54px 0 15px}.content h3{margin:30px 0 10px}.content ul{color:#c3cddb}.content a{color:var(--gold2);text-decoration:underline;text-underline-offset:3px}
+.faq{max-width:860px}.faq details{border-top:1px solid var(--line);padding:20px 0}.faq details:last-child{border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;color:#fff;font-weight:800;font-size:1.08rem}.faq details p{margin:12px 0 0;color:var(--muted)}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:20px}.comparison{width:100%;border-collapse:collapse;min-width:690px}.comparison th,.comparison td{padding:16px 18px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}.comparison th{color:var(--gold2);background:rgba(216,177,46,.06)}.comparison td:first-child{font-weight:800;color:#fff}.comparison tr:last-child td{border-bottom:0}.note{padding:20px 22px;border-left:3px solid var(--gold);background:rgba(216,177,46,.07);color:#cbd4dc;border-radius:0 14px 14px 0}
+.seo-footer{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:28px}.seo-footer h3{font-size:.78rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold2);margin:0 0 10px}.seo-footer a{display:block;min-height:34px;color:#98a8b7}.seo-footer a:hover{color:#fff}
+@media(max-width:900px){.story-grid,.link-grid,.price-grid{grid-template-columns:1fr 1fr}.proof{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr}.seo-footer{grid-template-columns:1fr 1fr}.navlinks .nav-cta{display:inline-flex}}
+@media(max-width:600px){.story-grid,.link-grid,.price-grid,.proof,.seo-footer{grid-template-columns:1fr}.page-hero{padding:52px 0 34px}.story-card,.link-card,.price-card{padding:22px}}
