@@ -18,6 +18,9 @@ Performance changes:
 Official support email:
 crew@boatworks-pro.com
 
-Remaining launch items:
-- Replace YOUR_APP_STORE_URL.
-- Add real Support and Privacy pages/URLs.
+Remaining launch item:
+- Replace the “Coming to the App Store” elements with the live App Store link at launch.
+
+Current public endpoints:
+- Support currently uses the official crew@boatworks-pro.com email address.
+- Privacy is published at privacy.html.
