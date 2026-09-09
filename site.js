@@ -1,6 +1,6 @@
 (function () {
   const storageKey = "boatworks-analytics-consent";
-  const measurementId = "G-E49V5BJDB8";
+  const measurementId = "G-31YQJGCCVJ";
   const banner = document.querySelector("[data-consent-banner]");
   const main = document.getElementById("main-content");
   let returnFocus = null;
