@@ -1,0 +1,87 @@
+:root {
+  --tarmac: #1f2429;
+  --tarmac-2: #2a3036;
+  --line: #f5c518;
+  --paper: #f6f4ee;
+  --ink: #1d2226;
+  --muted: #5d6670;
+  --rule: #dcd8cc;
+  --sky: #2f7fc1;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+a { color: var(--sky); }
+
+.site-header, footer {
+  background: var(--tarmac);
+  color: #fff;
+  padding: 16px max(16px, calc((100% - 880px) / 2));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.brand { color: #fff; text-decoration: none; display: flex; flex-direction: column; line-height: 1.2; }
+.brand strong { letter-spacing: .08em; }
+.brand small { color: var(--line); font-size: 12px; letter-spacing: .14em; }
+
+.site-header nav a, footer a { color: #fff; text-decoration: none; font-size: 15px; margin-left: 16px; }
+.site-header nav a[aria-current="page"] { color: var(--line); }
+
+.hero {
+  background: var(--tarmac-2);
+  color: #fff;
+  padding: 48px max(16px, calc((100% - 880px) / 2)) 56px;
+  position: relative;
+}
+/* Dashed taxiway centerline along the bottom of the hero */
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 20px;
+  height: 4px;
+  background: repeating-linear-gradient(90deg, var(--line) 0 28px, transparent 28px 48px);
+}
+.hero h1 { font-size: clamp(32px, 6vw, 48px); line-height: 1.1; margin: 0 0 12px; }
+.hero p { margin: 0; max-width: 620px; color: #d7dce0; }
+.eyebrow { color: var(--line) !important; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 8px !important; }
+
+main { padding: 0 16px; }
+.content { max-width: 880px; margin: 0 auto; padding: 40px 0 56px; }
+
+.content section { border-top: 1px solid var(--rule); padding: 24px 0; }
+.content section:first-child { border-top: 0; padding-top: 0; }
+h2 { font-size: 24px; margin: 0 0 8px; }
+h3 { font-size: 18px; margin: 20px 0 4px; }
+.content p, .content li { color: #333b42; }
+.meta { color: var(--muted); font-size: 15px; }
+
+.faq { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.faq article { background: #fff; border: 1px solid var(--rule); border-left: 4px solid var(--line); border-radius: 8px; padding: 16px 20px; }
+.faq h3 { margin-top: 0; }
+.faq p { margin: 0; }
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  background: var(--line);
+  color: var(--tarmac);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+footer p { margin: 0; color: #aab2ba; font-size: 14px; }
